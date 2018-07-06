@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.supprt.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/logo1" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:text="Log In" android:textColor="@android:color/black" android:textSize="36sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/useremail" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="40dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" android:ems="10" android:hint="Enter Your Email" android:inputType="textEmailAddress" app:layout_constraintHorizontal_bias="0.503" app:layout_constraintTop_toBottomOf="@+id/logo1"/>
+
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/pass1" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="60dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" android:ems="10" android:hint="Enter Your Password" android:inputType="textPassword" app:layout_constraintHorizontal_bias="0.503" app:layout_constraintTop_toBottomOf="@+id/useremail"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/log_button" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="40dp" android:text="Log In" android:textColor="@android:color/background_light" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/pass1" android:background="@android:color/black"/>
+
+    <TextView android:layout_width="263dp" android:layout_height="42dp" android:id="@+id/advice" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="32dp" android:text="Not a member? Sign Up Below" android:textColor="@android:color/black" android:textSize="18sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/log_button" android:textAlignment="center"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="65dp" android:id="@+id/su_button" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:text="Sign Up" android:textColor="@android:color/background_light" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/advice" android:background="@android:color/black" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+</android.supprt.constraint.ConstraintLayout>
